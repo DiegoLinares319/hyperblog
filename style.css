@@ -1,4 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  background-color: #232429;
   color: #333;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,12 +15,26 @@ body {
 }
 
 .cabecera {
-  background-color: #33a;
+  background: #394b88;
   box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.75);
   color: white;
   font-weight: bold;
   margin: 0;
-  padding: 0.5em;
+  padding: 0.5em 0 0.5em 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.cabecera .logo{
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.logo img {
+  width: 20px;
+  height: 20px;
 }
 
 .cabecera .tagline {
@@ -29,6 +50,7 @@ body {
   text-align: left;
   border: 1px solid #ddd;
   margin: 0 auto;
+  background-color: #fffdff;
 }
 
 .container h1 {
@@ -37,4 +59,11 @@ body {
 
 .post {
   padding: 1em;
+}
+
+.footer {
+  background: #777;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
 }
